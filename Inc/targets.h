@@ -2363,7 +2363,7 @@
  * *********************************/
 #ifdef EMILIS_G071
 #define FILE_NAME "EMILIS_G071"
-#define FIRMWARE_NAME "EMILIS_G071 "
+#define FIRMWARE_NAME "EMILIS_G071"
 #define DEAD_TIME 60
 #define MILLIVOLT_PER_AMP 20
 #define CURRENT_OFFSET 0
@@ -2380,7 +2380,7 @@
 
   #ifdef EMILIS_G071_4IN1
 #define FILE_NAME "EMILIS_G071_4IN1"
-#define FIRMWARE_NAME "EMILIS_4IN1 "
+#define FIRMWARE_NAME "EMILIS_4IN1"
 #define DEAD_TIME 60
 #define MILLIVOLT_PER_AMP 10
 #define CURRENT_OFFSET 0
