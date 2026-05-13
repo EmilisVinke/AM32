@@ -30,16 +30,16 @@ jobs:
         with:
           submodules: 'recursive'
 
-      - name: Build CI
-        shell: bash
-        run: |
-          if [ "$RUNNER_OS" == "Linux" ]; then
-            make arm_sdk_install
-            make -j8
-          elif [ "$RUNNER_OS" == "Windows" ]; then
-            make arm_sdk_install
-            tools/windows/make/bin/make
-          fi
+- name: Build CI
+  shell: bash
+  run: |
+    if [ "$RUNNER_OS" == "Linux" ]; then
+      make arm_sdk_install
+      make EMILIS_G071
+    elif [ "$RUNNER_OS" == "Windows" ]; then
+      make arm_sdk_install
+      tools/windows/make/bin/make EMILIS_G071
+    fi
 
       - name: Archive build
         uses: actions/upload-artifact@v4
